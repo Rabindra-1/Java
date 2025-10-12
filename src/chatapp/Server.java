@@ -1,6 +1,7 @@
 package chatapp;
 
 import java.awt.Color;
+import java.net.URL;
 import javax.swing.*;
 
 public class Server extends JFrame {
@@ -21,8 +22,8 @@ public class Server extends JFrame {
         
         
         
-        
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/Add.ico"));
+        URL imageUrl = getClass().getResource("/icons/1.png");
+        ImageIcon i1 = new ImageIcon(imageUrl);
         JLabel back = new JLabel(i1);
         back.setBounds(0, 0, 50, 50);
         p1.add(back);
